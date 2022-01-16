@@ -28,7 +28,9 @@ namespace Timed_Math_Quiz
             sub1 = randomizer.Next(51);
             sub2 = randomizer.Next(51);
             div1 = randomizer.Next(51);
-            div2 = randomizer.Next(51);
+            do {
+                div2 = randomizer.Next(60);
+            } while (div2==0);
             addLeft.Text = addend1.ToString();
             addright.Text = addend2.ToString();
             sumRess.Value = 0;
